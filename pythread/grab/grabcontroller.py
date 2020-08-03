@@ -168,7 +168,7 @@ def startup_grab():
 
 def dojob():
     scheduler = BlockingScheduler()
-    scheduler.add_job(startup_grab, CronTrigger.from_crontab('25 9 * * *'))
+    scheduler.add_job(startup_grab, CronTrigger.from_crontab('0 0 * * *'))
     scheduler.start()
 
 dojob()

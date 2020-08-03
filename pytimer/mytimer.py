@@ -12,7 +12,7 @@ def func():
 
 def dojob():
     scheduler = BlockingScheduler()
-    scheduler.add_job(func,CronTrigger.from_crontab('31 8 * * *'))
+    scheduler.add_job(func,CronTrigger.from_crontab('15 16 * * *'))
     scheduler.start()
 
 dojob()
